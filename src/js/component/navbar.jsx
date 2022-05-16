@@ -4,28 +4,45 @@ import React from "react";
 const Navbar = () => {
 	return (
 		<div>
-			<div class="pos-f-t">
-				<div class="collapse" id="navbarToggleExternalContent">
-					<div class="bg-dark p-4">
-						<h4 class="text-white">Collapsed content</h4>
-						<span class="text-muted">
-							Toggleable via the navbar brand.
-						</span>
-					</div>
+			<nav className="navbar navbar-expand-lg navbar-light bg-dark">
+				<button
+					className="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarTogglerDemo01"
+					aria-controls="navbarTogglerDemo01"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span className="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+					<a className="navbar-brand text-white" href="#">
+						Start Bootstrap
+					</a>
+					<ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+						<li class="nav-item active">
+							<a className="nav-link text-white" href="#">
+								Home <span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li className="nav-item">
+							<a className="nav-link text-white" href="#">
+								About
+							</a>
+						</li>
+						<li className="nav-item">
+							<a className="nav-link text-white" href="#">
+								Services
+							</a>
+						</li>
+						<li className="nav-item">
+							<a className="nav-link text-white" href="#">
+								Contact
+							</a>
+						</li>
+					</ul>
 				</div>
-				<nav class="navbar navbar-dark bg-dark">
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-toggle="collapse"
-						data-target="#navbarToggleExternalContent"
-						aria-controls="navbarToggleExternalContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-				</nav>
-			</div>
+			</nav>
 		</div>
 	);
 };

@@ -7,7 +7,7 @@ const Footer = () => {
 	};
 	return (
 		<div className="bg-dark text-white text-center p-5 mt-4" style={estilo}>
-			footer
+			Copyright © your website 2022
 		</div>
 	);
 };
