@@ -15,11 +15,13 @@ const Navbar = () => {
 					aria-label="Toggle navigation">
 					<span className="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				<div
+					class="collapse navbar-collapse d-flex justify-content-between"
+					id="navbarTogglerDemo01">
 					<a className="navbar-brand text-white" href="#">
 						Start Bootstrap
 					</a>
-					<ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+					<ul className="navbar-nav ml-auto mt-2 mt-lg-0">
 						<li class="nav-item active">
 							<a className="nav-link text-white" href="#">
 								Home <span class="sr-only">(current)</span>
